@@ -149,9 +149,24 @@ h1 {
 }
 #photos img {
   z-index: 10;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 #photos img:hover {
   cursor: pointer;
+  -moz-transform: rotate3d(0, 0, 1, 180deg);
+  -o-transform: rotate3d(0, 0, 1, 180deg);
+  -ms-transform: rotate3d(0, 0, 1, 180deg);
+  -webkit-transform: rotate3d(0, 0, 1, 180deg);
+  transform: rotate3d(0, 0, 1, 180deg);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 #photos #type {
   margin-top: 50px;
