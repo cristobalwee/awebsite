@@ -22,17 +22,31 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asset|Fugaz+One|UnifrakturMaguntia" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <h1>This is a <u>Website</u>.</h1>
-    <div id="front">
-      <div class="content">
-        <p id="about">about</p>
+    <div id="overlay-about">
+      <div class="overlay">
+        <a onclick="closeAbout()"><p id="close">x</p></a>
+        <p>hi hello welcome, my name is <a id="name" href="http://cristobalgrana.me/" target="_blank" rel="noopener noreferrer">cristobal</a> and I can be a bit of a condescending <a id="twat">twat</a> sometimes because I like to correct people. This <a id="website">website</a> is just a collection of technicalities I point out to everyone when I’m feeling particularly <a id="cheeky">cheeky</a>. Click on an image to see what it’s about, scroll to see more images. Enjoy. Or don’t, that’s not really up to me. Do whatever the <a id="fuck">fuck</a> you want.</p>
       </div>
-      <p id="scroll">(scroll and click)</p>
     </div>
+    <div id="photos">
+      <div>
+        <img id="type" src="media/type.png">
+      </div>
+      <div class="right">
+        <img id="beer" src="media/beer.png">
+      </div>
+      <div>
+        <img id="whiskey" src="media/whiskey.png">
+      </div>
+    </div>
+    <p onclick="openAbout()" id="about">about</p>
+    <p id="scroll">(scroll and click)</p>
   </body>
 </html>

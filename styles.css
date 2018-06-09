@@ -11,6 +11,10 @@
   display: inline !important;
 }
 
+.right {
+  text-align: right;
+}
+
 .justify {
   text-align: justify;
 }
@@ -29,49 +33,136 @@
   transform: translateY(-50%);
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+a:focus {
+  color: black;
+}
+
 h1 {
   font-family: "UnifrakturMaguntia", cursive;
   font-weight: 400;
   font-size: 24px;
-  z-index: -1;
   text-align: center;
   position: fixed;
+  z-index: 998;
   top: 50vh;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 100vw;
+  left: 50vw;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-#front {
-  z-index: 999;
+.overlay {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(198, 198, 198, 0.75);
 }
-#front #about {
+
+#overlay-about {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+#overlay-about p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  line-height: 56px;
+  padding: 20px 40px;
+  text-align: justify;
+}
+#overlay-about p #name {
+  font-family: "Libre Barcode 39 Extended Text", cursive;
+  font-size: 32px;
+}
+#overlay-about p #twat {
+  font-family: "Asset", serif;
+  color: #cf0000;
+}
+#overlay-about p #website {
   font-family: "UnifrakturMaguntia", cursive;
+  color: #0100ff;
+  font-size: 32px;
+}
+#overlay-about p #cheeky {
+  font-family: "Fugaz One", cursive;
+  color: #ff6e00;
+  font-size: 32px;
+}
+#overlay-about p #fuck {
+  font-family: "Courier", monospace;
+  color: #891cee;
+  font-size: 32px;
+}
+#overlay-about #close {
   position: absolute;
+  right: 10px;
+  top: -10px;
+  padding: 0;
+}
+
+#about {
+  font-family: "UnifrakturMaguntia", cursive;
+  position: fixed;
   left: 10px;
   font-size: 18px;
-  top: -10px;
+  z-index: 11;
+  top: 50vh;
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-#front #scroll {
-  position: absolute;
+#about:hover {
+  cursor: pointer;
+}
+
+#scroll {
+  position: fixed;
   bottom: 0;
   text-align: center;
   font-family: "UnifrakturMaguntia", cursive;
   font-size: 18px;
   width: 100vw;
   bottom: 10px;
+}
+
+#photos {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+}
+#photos img {
+  z-index: 10;
+}
+#photos img:hover {
+  cursor: pointer;
+}
+#photos #type {
+  margin-top: 50px;
+  margin-left: 75px;
+}
+#photos #beer {
+  margin-top: -50px;
+  margin-right: 100px;
+}
+#photos #whiskey {
+  margin-left: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */
