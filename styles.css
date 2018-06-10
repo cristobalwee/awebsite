@@ -125,6 +125,28 @@ h1 {
   padding: 0;
 }
 
+#overlay-fact {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+#overlay-fact #fact {
+  background-color: #fff;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  left: 50vw;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 #about {
   font-family: "UnifrakturMaguntia", cursive;
   position: fixed;
