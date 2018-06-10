@@ -108,6 +108,16 @@ h1 {
   color: #891cee;
   font-size: 32px;
 }
+#overlay-about p #letterA {
+  font-family: "Kumar One", cursive;
+  color: #f9ff00;
+  font-size: 32px;
+}
+#overlay-about p #letterB {
+  font-family: "Kumar One", cursive;
+  color: #00ff33;
+  font-size: 32px;
+}
 #overlay-about #close {
   position: absolute;
   right: 10px;
@@ -157,11 +167,6 @@ h1 {
 }
 #photos img:hover {
   cursor: pointer;
-  -moz-transform: rotate3d(0, 0, 1, 180deg);
-  -o-transform: rotate3d(0, 0, 1, 180deg);
-  -ms-transform: rotate3d(0, 0, 1, 180deg);
-  -webkit-transform: rotate3d(0, 0, 1, 180deg);
-  transform: rotate3d(0, 0, 1, 180deg);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -178,6 +183,31 @@ h1 {
 }
 #photos #whiskey {
   margin-left: 200px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Helvetica Neue", sans-serif;
+  visibility: hidden;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  width: 300px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
