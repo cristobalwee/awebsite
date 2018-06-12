@@ -31,7 +31,7 @@
     <h1>This is a <u>Website</u>.</h1>
     <div id="overlay-about">
       <div class="overlay">
-        <a onclick="closeAbout()"><p id="close">x</p></a>
+        <a onclick="closeAbout()"><p class="close">x</p></a>
         <p>hello there, I'm <a id="name" href="http://cristobalgrana.me/" target="_blank" rel="noopener noreferrer">cristobal</a>
            and this is a collection of things I point out to people when I’m feeling particularly <a id="cheeky" class="tooltip">cheeky<span class="tooltiptext"><i>adjective</i> <b>British</b><br>impudent or irreverent, typically in an endearing or amusing way.</span></a>.
            Why? Because I like to do stuff with the <a id="website" class="tooltip">web<span class="tooltiptext"><i>noun</i><br>an information space where documents and other resources accessible via the Internet.</span></a>, and also I'm a little bored at the moment. Oh,
@@ -43,21 +43,30 @@
     <div id="overlay-fact">
       <div class="overlay">
         <div id="fact" class="content">
+          <a onclick="closeFact()"><p class="close">x</p></a>
+          <div id="fact-content">
+          </div>
         </div>
       </div>
     </div>
     <div id="photos">
       <div>
-        <img id="type" src="media/type.png">
+        <img onclick="openFact('type')"  id="type" src="media/type.png">
       </div>
       <div class="right">
-        <img id="beer" src="media/beer.png">
+        <img onclick="openFact('beer')" id="beer" src="media/beer.png">
       </div>
       <div>
-        <img id="whiskey" src="media/whiskey.png">
+        <img onclick="openFact('whiskey')"  id="whiskey" src="media/whiskey.png">
+      </div>
+      <div class="right">
+        <img onclick="openFact('fax')"  id="fax" src="media/fax.png">
+      </div>
+      <div>
+        <img onclick="openFact('edison')"  id="edison" src="media/edison.png">
       </div>
     </div>
     <p onclick="openAbout()" id="about">about</p>
-    <p onclick="openFact()" id="scroll">(scroll and click)</p>
+    <p id="scroll">(scroll and click)</p>
   </body>
 </html>

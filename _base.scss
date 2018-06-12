@@ -120,7 +120,7 @@ h1 {
     }
   }
 
-  #close {
+  .close {
     position: absolute;
     right: 10px;
     top: -10px;
@@ -143,7 +143,28 @@ h1 {
     height: 400px;
     position: relative;
     left: 50vw;
+    padding: 10px;
     @include transform(translate(-50%, -50%));
+  }
+
+  p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    text-align: justify;
+  }
+
+  h2 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    padding: 10px;
   }
 }
 
@@ -199,6 +220,16 @@ h1 {
 
   #whiskey {
     margin-left: 200px;
+  }
+
+  #fax {
+    margin-top: 50px;
+    margin-right: 200px;
+  }
+
+  #edison {
+    margin-top: -50px;
+    margin-left: 125px;
   }
 }
 
