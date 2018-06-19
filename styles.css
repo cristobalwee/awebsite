@@ -140,7 +140,7 @@ h1 {
   height: 400px;
   position: relative;
   left: 50vw;
-  padding: 10px;
+  padding: 20px;
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -149,11 +149,11 @@ h1 {
 }
 #overlay-fact p {
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 28px;
+  font-size: 20px;
   text-align: justify;
 }
 #overlay-fact h2 {
-  font-family: "UnifrakturMaguntia", cursive;
+  font-family: "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
@@ -162,6 +162,7 @@ h1 {
   position: absolute;
   right: 10px;
   top: -10px;
+  font-size: 28px;
   padding: 10px;
 }
 
